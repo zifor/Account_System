@@ -5,12 +5,27 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>za.ac.nwu.ac</groupId>
+        <groupId>za.ac.nwu.as</groupId>
         <artifactId>AccountSystem</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>AccountSystemTranslator</artifactId>
-<!--    <packaging>jar</packaging>-->
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>za.ac.nwu.as</groupId>
+            <artifactId>AccountSystemDomain</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>za.ac.nwu.as</groupId>
+            <artifactId>AccountSystemRepository</artifactId>
+            <version>${project.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
     
 </project>
